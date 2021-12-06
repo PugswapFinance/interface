@@ -1,0 +1,57 @@
+{
+  "name": "SilverSwap List",
+  "timestamp": "2021-12-06T07:15:29.993Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "silverswap",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "Silver Token",
+      "address": "0x810DC08096E28C1306818A71a196F4E17d8D9cB4",
+      "symbol": "SILVER",
+      "decimals": 18,
+      "chainId": 338,
+      "logoURI": "https://raw.githubusercontent.com/cronos_placeholder/3121f24fc5bb18ff97e759eb4d9c99850495e642/Interface/public/images/tokens/silver.png"
+    },
+    {
+      "name": "Wrapped TCRO",
+      "address": "0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a",
+      "symbol": "WTCRO",
+      "decimals": 18,
+      "chainId": 338,
+      "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/cryptoorg/info/logo.png"
+    },
+    {
+      "name": "Wrapped CRO",
+      "address": "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
+      "symbol": "WCRO",
+      "decimals": 18,
+      "chainId": 25,
+      "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/cryptoorg/info/logo.png"
+    },
+    {
+      "name": "USDT Test Coin",
+      "address": "0x76D3Ae5Ef3Edc8F7d946d7E47be3DC22bE4D5754",
+      "symbol": "USDTt",
+      "decimals": 18,
+      "chainId": 338,
+      "logoURI": "https://raw.githubusercontent.com/cronos_placeholder/main/Interface/public/images/tokens/usdc.png"
+    },
+    {
+      "name": "SHIBA INU Test Token",
+      "address": "0x691258797E8778f4237C3A6B09484eA1c844314e",
+      "symbol": "SHIBt",
+      "decimals": 18,
+      "chainId": 338,
+      "logoURI": "https://raw.githubusercontent.com/cronos_placeholder/main/Interface/public/images/tokens/shib.png"
+    }
+  ]
+}
