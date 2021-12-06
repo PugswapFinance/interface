@@ -11,9 +11,9 @@ import NavLink from '../NavLink'
 
 const items = (i18n: I18n) => [
   {
-    name: i18n._(t`About Silver Finance`),
-    description: i18n._(t`Read our whitepaper and roadmap.`),
-    href: 'https://github.com/placeholder',
+    name: i18n._(t`About SilverSwap`),
+    description: i18n._(t`Read our whitepaper and updates on Medium.`),
+    href: 'https://silverswap.medium.com/',
     external: true,
   },
   {
@@ -25,19 +25,19 @@ const items = (i18n: I18n) => [
   {
     name: i18n._(t`Telegram`),
     description: i18n._(t`Join the community on Telegram.`),
-    href: 'https://t.me/placeholder',
+    href: 'https://t.me/SilverSwap',
     external: true,
   },
   {
     name: i18n._(t`Twitter`),
     description: i18n._(t`Follow us on Twitter.`),
-    href: 'https://twitter.com/placeholder',
+    href: 'https://twitter.com/SilverSwapOrg',
     external: true,
   },
   {
     name: i18n._(t`Github`),
     description: i18n._(t`We're supporters of Open Source.`),
-    href: 'https://github.com/placeholder',
+    href: 'https://github.com/SilverSwap',
     external: true,
   },
 ]

@@ -15,7 +15,7 @@ export default function PairTabs({ tabs }: { tabs: any[] }): JSX.Element {
                 <a
                   className={classNames(
                     router.asPath === tab.href
-                      ? tab.customCurrent ?? 'bg-gradient-to-r from-blue to-pink text-transparent bg-clip-text'
+                      ? tab.customCurrent ?? 'bg-gradient-to-r from-blue to-opaque-blue text-transparent bg-clip-text'
                       : 'text-primary hover:text-gray-200',
                     'group flex flex-auto flex-col px-1 font-bold text-lg'
                   )}

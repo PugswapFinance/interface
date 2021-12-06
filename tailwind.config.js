@@ -159,12 +159,12 @@ module.exports = {
       addUtilities({
         '.header-border-b': {
           background:
-            'linear-gradient(to right, rgba(255, 209, 101, 0.5) 0%, rgba(255, 209, 101, 0.5) 100%) left bottom no-repeat',
+            'linear-gradient(to right, rgba(250, 82, 160, 0.15) 0%, rgba(250, 82, 160, 0.15) 100%) left bottom no-repeat',
           backgroundSize: '100% 1px',
         },
         '.token-stats-border-b': {
           background:
-            'linear-gradient(to right, rgba(255, 209, 101, 0.5) 0%, rgba(255, 209, 101, 0.5) 100%) left bottom no-repeat',
+            'linear-gradient(to right, rgba(250, 82, 160, 0.15) 0%, rgba(250, 82, 160, 0.15) 100%) left bottom no-repeat',
           backgroundSize: '100% 2px',
         }
       })
