@@ -5,7 +5,7 @@ import { WrappedTokenInfo } from '../../state/lists/wrappedTokenInfo'
 import useHttpLocations from '../../hooks/useHttpLocations'
 
 export const getTokenLogoURL = (address: string, chainId: ChainId) => {
-  return `https://raw.githubusercontent.com/cronos_placeholder/main/Interface/public/images/tokens/blockchains/${BLOCKCHAIN[chainId]}/assets/${address}/logo.png`
+  return `https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/blockchains/${BLOCKCHAIN[chainId]}/assets/${address}/logo.png`
 }
 
 const BLOCKCHAIN = {
@@ -36,7 +36,7 @@ function getCurrencyLogoUrls(currency) {
   const urls = []
   if (currency.chainId in BLOCKCHAIN) {
     urls.push(
-      `https://raw.githubusercontent.com/cronos_placeholder/main/Interface/public/images/tokens/blockchains/${BLOCKCHAIN[currency.chainId]}/assets/${
+      `https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/blockchains/${BLOCKCHAIN[currency.chainId]}/assets/${
         currency.address
       }/logo.png`
     )

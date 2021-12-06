@@ -19,7 +19,7 @@
       "symbol": "SILVER",
       "decimals": 18,
       "chainId": 338,
-      "logoURI": "https://raw.githubusercontent.com/cronos_placeholder/3121f24fc5bb18ff97e759eb4d9c99850495e642/Interface/public/images/tokens/silver.png"
+      "logoURI": "https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/silver.png"
     },
     {
       "name": "Wrapped TCRO",
@@ -43,7 +43,7 @@
       "symbol": "USDTt",
       "decimals": 18,
       "chainId": 338,
-      "logoURI": "https://raw.githubusercontent.com/cronos_placeholder/main/Interface/public/images/tokens/usdc.png"
+      "logoURI": "https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/usdc.png"
     },
     {
       "name": "SHIBA INU Test Token",
@@ -51,7 +51,7 @@
       "symbol": "SHIBt",
       "decimals": 18,
       "chainId": 338,
-      "logoURI": "https://raw.githubusercontent.com/cronos_placeholder/main/Interface/public/images/tokens/shib.png"
+      "logoURI": "https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/shib.png"
     }
   ]
 }
