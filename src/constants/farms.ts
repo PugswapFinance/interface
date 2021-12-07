@@ -23,7 +23,7 @@ type AddressMap = {
 
 export const POOLS: AddressMap = {
   [ChainId.CRONOS_TESTNET]: {
-    '0x58B3751EEFF46Cd7e5a765f16a42C5e63F6BB344': {
+    '0x195bd6e941064cf270B443D780fecfBAd49315C2': {
       id: 0,
       token0: {
         id: '0x810DC08096E28C1306818A71a196F4E17d8D9cB4',
@@ -32,15 +32,15 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x0636617c67CB84D49C1417F641629Db7d8c065BA',
-        name: 'USDC Test Coin',
-        symbol: 'USDCt',
+        id: '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a',
+        name: 'Wrapped CRO',
+        symbol: 'WCRO',
         decimals: 18,
       },
       name: 'Silver LP',
       symbol: 'SLP',
     },
-    '0x6a09c284e56771633255B8719281b9Fb5bF7Ce18': {
+    '0x8FFA8517f8d2d4958b8f7a34ACF6CAe124baeAc7': {
       id: 1,
       token0: {
         id: '0x810DC08096E28C1306818A71a196F4E17d8D9cB4',
@@ -49,15 +49,15 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0xD7C5BB823bB5E4D6581605B057c92486D1f5CE6a',
-        name: 'Shiba Inu Test Coin',
-        symbol: 'SHIBt',
+        id: '0x76D3Ae5Ef3Edc8F7d946d7E47be3DC22bE4D5754',
+        name: 'USDC Test Coin',
+        symbol: 'USDCt',
         decimals: 18,
       },
       name: 'Silver LP',
       symbol: 'SLP',
     },
-    '0x382308715962270BA8B9C1beB143891C1Fb7717a': {
+    '0x17f21c3BEe0c84357A6C5a2Bd8F85Ea226801217': {
       id: 2,
       token0: {
         id: '0x810DC08096E28C1306818A71a196F4E17d8D9cB4',
@@ -66,16 +66,33 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
+        id: '0x691258797E8778f4237C3A6B09484eA1c844314e',
+        name: 'Shiba Inu Test Coin',
+        symbol: 'SHIBt',
+        decimals: 18,
+      },
+      name: 'Silver LP',
+      symbol: 'SLP',
+    },
+    '0x7cDA4d9F5C8e677fD51aAccDc6d342984C3b66c4': {
+      id: 3,
+      token0: {
+        id: '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a',
         name: 'Wrapped CRO',
         symbol: 'WCRO',
+        decimals: 18,
+      },
+      token1: {
+        id: '0x76D3Ae5Ef3Edc8F7d946d7E47be3DC22bE4D5754',
+        name: 'USDC Test Coin',
+        symbol: 'USDCt',
         decimals: 18,
       },
       name: 'Silver LP',
       symbol: 'SLP',
     },
     '0x810DC08096E28C1306818A71a196F4E17d8D9cB4': {
-      id: 3,
+      id: 4,
       token0: {
         id: '0x810DC08096E28C1306818A71a196F4E17d8D9cB4',
         name: 'Silver Token',

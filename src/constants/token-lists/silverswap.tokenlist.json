@@ -38,9 +38,9 @@
       "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/cryptoorg/info/logo.png"
     },
     {
-      "name": "USDT Test Coin",
+      "name": "USDC Test Coin",
       "address": "0x76D3Ae5Ef3Edc8F7d946d7E47be3DC22bE4D5754",
-      "symbol": "USDTt",
+      "symbol": "USDCt",
       "decimals": 18,
       "chainId": 338,
       "logoURI": "https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/usdc.png"
