@@ -78,8 +78,8 @@ export interface TVLInfo {
 export function useVaultTVL(): TVLInfo[] {
   const { chainId } = useActiveWeb3React()
   const priceData = useContext(PriceContext)
-  const solarPrice = priceData?.data?.['solar']
-  const movrPrice = priceData?.data?.['movr']
+  const solarPrice = priceData?.data?.['silver']
+  const movrPrice = priceData?.data?.['cro']
   const ribPrice = priceData?.data?.['rib']
 
   const farmingPools = Object.keys(VAULTS[ChainId.CRONOS_TESTNET]).map((key) => {
@@ -104,8 +104,8 @@ export function useVaultTVL(): TVLInfo[] {
     function isKnownToken(token: TokenInfo) {
       return (
         token.id.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase() ||
-        token.symbol == 'WMOVR' ||
-        token.symbol == 'MOVR' ||
+        token.symbol == 'WCRO' ||
+        token.symbol == 'CRO' ||
         token.symbol == 'RIB' ||
         token.symbol == 'USDC'||
         token.symbol == 'BUSD'
@@ -116,7 +116,7 @@ export function useVaultTVL(): TVLInfo[] {
       if (token.id.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase()) {
         return solarPrice
       }
-      if (token.symbol == 'WMOVR' || token.symbol == 'MOVR') {
+      if (token.symbol == 'WCRO' || token.symbol == 'CRO') {
         return movrPrice
       }
       if (token.symbol == 'RIB' || token.symbol == 'RIB') {
@@ -211,8 +211,8 @@ export function useVaultTVL(): TVLInfo[] {
 export function useTVL(): TVLInfo[] {
   const { chainId } = useActiveWeb3React()
   const priceData = useContext(PriceContext)
-  const solarPrice = priceData?.data?.['solar']
-  const movrPrice = priceData?.data?.['movr']
+  const solarPrice = priceData?.data?.['silver']
+  const movrPrice = priceData?.data?.['cro']
   const ribPrice = priceData?.data?.['rib']
 
   const farmingPools = Object.keys(POOLS[ChainId.CRONOS_TESTNET]).map((key) => {
@@ -237,8 +237,8 @@ export function useTVL(): TVLInfo[] {
     function isKnownToken(token: TokenInfo) {
       return (
         token.id.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase() ||
-        token.symbol == 'WMOVR' ||
-        token.symbol == 'MOVR' ||
+        token.symbol == 'WCRO' ||
+        token.symbol == 'CRO' ||
         token.symbol == 'SILVER' ||
         token.symbol == 'USDC' ||
         token.symbol == 'BUSD'
@@ -249,13 +249,13 @@ export function useTVL(): TVLInfo[] {
       if (token.id.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase()) {
         return solarPrice
       }
-      if (token.symbol == 'WMOVR' || token.symbol == 'MOVR') {
+      if (token.symbol == 'WCRO' || token.symbol == 'CRO') {
         return movrPrice
       }
       if (token.symbol == 'RIB' || token.symbol == 'RIB') {
         return ribPrice
       }
-      if (token.symbol == 'USDC' || token.symbol == 'BUSD') {
+      if (token.symbol == 'USDCt' || token.symbol == 'USDC' || token.symbol == 'BUSD') {
         return 1
       }
       return 0
@@ -371,16 +371,16 @@ export function useV2PairsWithPrice(
   const totalSupply = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'totalSupply')
 
   const priceData = useContext(PriceContext)
-  const solarPrice = priceData?.data?.['solar']
-  const movrPrice = priceData?.data?.['movr']
+  const solarPrice = priceData?.data?.['silver']
+  const movrPrice = priceData?.data?.['cro']
   const ribPrice = priceData?.data?.['rib']
 
   return useMemo(() => {
     function isKnownToken(token: Token) {
       return (
         token.address.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase() ||
-        token.symbol == 'WMOVR' ||
-        token.symbol == 'MOVR' ||
+        token.symbol == 'WCRO' ||
+        token.symbol == 'CRO' ||
         token.symbol == 'RIB' ||
         token.symbol == 'USDC' ||
         token.symbol == 'BUSD'
@@ -391,7 +391,7 @@ export function useV2PairsWithPrice(
       if (token.address.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase()) {
         return solarPrice
       }
-      if (token.symbol == 'WMOVR' || token.symbol == 'MOVR') {
+      if (token.symbol == 'WCRO' || token.symbol == 'CRO') {
         return movrPrice
       }
       if (token.symbol == 'RIB' || token.symbol == 'RIB') {

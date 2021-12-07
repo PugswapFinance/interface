@@ -27,8 +27,8 @@ const FarmListItem2 = ({ farm, ...rest }) => {
   
   const priceData = useContext(PriceContext);
 
-  const solarPrice = priceData?.data?.["solar"];
-  const movrPrice = priceData?.data?.["movr"];
+  const solarPrice = priceData?.data?.["silver"];
+  const movrPrice = priceData?.data?.["cro"];
   const ribPrice = priceData?.data?.["rib"];
 
   const [selectedFarm, setSelectedFarm] = useState<string>(null)

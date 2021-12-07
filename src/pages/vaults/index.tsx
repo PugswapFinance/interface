@@ -33,8 +33,8 @@ export default function Vault(): JSX.Element {
 
   const priceData = useContext(PriceContext)
 
-  const solarPrice = priceData?.data?.['solar']
-  const movrPrice = priceData?.data?.['movr']
+  const solarPrice = priceData?.data?.['silver']
+  const movrPrice = priceData?.data?.['cro']
 
   const tvlInfo = useTVL()
   
@@ -61,7 +61,7 @@ export default function Vault(): JSX.Element {
         ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.SilverPerBlock) / 1e18
 
       const defaultReward = {
-        token: 'Var',
+        token: 'Silver',
         icon: '/images/token/silver.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,

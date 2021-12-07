@@ -47,7 +47,7 @@ export async function farms() {
       if (!staticInfo.token1) {
         ret.push({
           address: staticInfo.token0.id,
-          baseSymbol: staticInfo.token0.symbol.toLowerCase().replace('wmovr', 'movr'),
+          baseSymbol: staticInfo.token0.symbol.toLowerCase().replace('wcro', 'cro'),
           baseAmount: pool.totalLp / 10 ** staticInfo.token0?.decimals,
           single: true,
         })

@@ -41,8 +41,8 @@ export default function Farm(): JSX.Element {
 
   const priceData = useContext(PriceContext)
 
-  const solarPrice = priceData?.data?.['solar']
-  const movrPrice = priceData?.data?.['movr']
+  const solarPrice = priceData?.data?.['silver']
+  const movrPrice = priceData?.data?.['cro']
 
   const tvlInfo = useTVL()
 
@@ -74,8 +74,8 @@ export default function Farm(): JSX.Element {
         ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.SilverPerBlock) / 1e18 // change SilverPerBlock
 
       const defaultReward = {
-        token: 'Var',
-        icon: '/images/token/solar.png',
+        token: 'Silver',
+        icon: '/images/token/silver.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,
         rewardPrice: solarPrice,
