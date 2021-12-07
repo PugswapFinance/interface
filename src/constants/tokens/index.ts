@@ -241,6 +241,7 @@ export const SILVER: ChainTokenMap = {
 
 export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ...WETH9,
+  /**
   [SupportedChainId.MOONRIVER]: new Token(
     ChainId.MOONRIVER,
     '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
@@ -255,6 +256,7 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
     'WMATIC',
     'Wrapped Matic'
   ),
+  **/
   [SupportedChainId.CRONOS_TESTNET]: new Token(
     ChainId.CRONOS_TESTNET,
     '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a',
@@ -262,13 +264,14 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
     'WTCRO',
     'Wrapped TCRO'
   ),
+  /**
   [SupportedChainId.CRONOS]: new Token(
     ChainId.CRONOS,
     '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23',
     18,
     'WCRO',
     'Wrapped CRO'
-  ),
+  ),  **/
 }
 
 export class ExtendedEther extends Ether {
