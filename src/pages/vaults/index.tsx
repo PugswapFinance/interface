@@ -62,7 +62,7 @@ export default function Vault(): JSX.Element {
 
       const defaultReward = {
         token: 'Var',
-        icon: '/images/token/var.png',
+        icon: '/images/token/silver.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,
         rewardPrice: solarPrice,
