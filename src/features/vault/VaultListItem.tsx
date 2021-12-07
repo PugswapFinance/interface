@@ -107,7 +107,7 @@ const VaultListItem = ({ farm, ...rest }) => {
                     {farm?.rewards?.map((reward, i) => (
                       <div key={i} className="flex items-center">
                         <Image
-                          src={`/images/tokens/var.png`}
+                          src={`/images/tokens/silver.png`}
                           width="50px"
                           height="50px"
                           className="rounded-md"
