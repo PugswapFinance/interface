@@ -200,8 +200,8 @@ export const WETH9: { [chainId: number]: Token } = {
     ChainId.CRONOS_TESTNET,
     '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a',
     18,
-    'WTCRO',
-    'Wrapped TCRO'
+    'WCRO',
+    'Wrapped CRO'
   ),
   [ChainId.CRONOS]: new Token(
     ChainId.CRONOS,
@@ -357,8 +357,8 @@ export const WNATIVE: { [chainId: number]: Token } = {
     ChainId.CRONOS_TESTNET,
     '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a',
     18,
-    'WTCRO',
-    'Wrapped TCRO'
+    'WCRO',
+    'Wrapped CRO'
   ),
   [ChainId.CRONOS]: new Token(
     ChainId.CRONOS,

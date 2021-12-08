@@ -120,14 +120,14 @@ function MyApp({
 
         <meta key="twitter:card" name="twitter:card" content="app" />
         <meta key="twitter:title" name="twitter:title" content="Silverswap.org app" />
-        <meta key="twitter:url" name="twitter:url" content="https://solarbeam.io" />
+        <meta key="twitter:url" name="twitter:url" content="https://silverswap.org" />
         <meta key="twitter:description" name="twitter:description" content="Silverswap.org - DEX/AMM for CRONOS Network" />
-        <meta key="twitter:image" name="twitter:image" content="https://solarbeam.io/icons/icon.png" />
-        <meta key="twitter:creator" name="twitter:creator" content="@solarbeam.io" />
+        <meta key="twitter:image" name="twitter:image" content="https://silverswap.org/icons/icon.png" />
+        <meta key="twitter:creator" name="twitter:creator" content="@silverswap.org" />
         <meta key="og:type" property="og:type" content="website" />
         <meta key="og:site_name" property="og:site_name" content="Silverswap.org app" />
-        <meta key="og:url" property="og:url" content="https://solarbeam.io" />
-        <meta key="og:image" property="og:image" content="https://solarbeam.io/icon.png" />
+        <meta key="og:url" property="og:url" content="https://silverswap.org" />
+        <meta key="og:image" property="og:image" content="https://silverswap.org/icon.png" />
         <meta key="og:description" property="og:description" content="Silverswap.org - DEX/AMM for CRONOS Network" />
       </Head>
       <I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>

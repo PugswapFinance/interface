@@ -57,7 +57,7 @@ const MoonbeamLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/t
 const OKExLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/okt.jpg'
 const xDaiLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/dai.jpg'
 const CeloLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/celo.jpg'
-const MoonriverLogo = 'https://solarbeam.io/images/tokens/movr.png'
+const MoonriverLogo = 'https://silverswap.org/images/tokens/movr.png'
 const CronosLogo = 'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/cryptoorg/info/logo.png'
 
 const logo: { readonly [chainId in ChainId]?: string } = {

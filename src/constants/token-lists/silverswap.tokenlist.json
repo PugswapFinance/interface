@@ -22,9 +22,9 @@
       "logoURI": "https://raw.githubusercontent.com/SilverSwap/interface/main/public/images/tokens/silver.png"
     },
     {
-      "name": "Wrapped TCRO",
+      "name": "Wrapped CRO",
       "address": "0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a",
-      "symbol": "WTCRO",
+      "symbol": "WCRO",
       "decimals": 18,
       "chainId": 338,
       "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/cryptoorg/info/logo.png"

@@ -261,8 +261,8 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
     ChainId.CRONOS_TESTNET,
     '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a',
     18,
-    'WTCRO',
-    'Wrapped TCRO'
+    'WCRO',
+    'Wrapped CRO'
   ),
   /**
   [SupportedChainId.CRONOS]: new Token(
