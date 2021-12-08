@@ -105,7 +105,7 @@ function MyApp({
         />
         <title key="title">Silverswap.org</title>
 
-        <meta key="description" name="description" content="Silverswap.org - DEX with LP protection" />
+        <meta key="description" name="description" content="Silverswap.org - DEX/AMM for CRONOS Network" />
 
         <meta name="application-name" content="Silverswap.org app" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -121,14 +121,14 @@ function MyApp({
         <meta key="twitter:card" name="twitter:card" content="app" />
         <meta key="twitter:title" name="twitter:title" content="Silverswap.org app" />
         <meta key="twitter:url" name="twitter:url" content="https://solarbeam.io" />
-        <meta key="twitter:description" name="twitter:description" content="Silverswap.org - DEX with LP protection" />
+        <meta key="twitter:description" name="twitter:description" content="Silverswap.org - DEX/AMM for CRONOS Network" />
         <meta key="twitter:image" name="twitter:image" content="https://solarbeam.io/icons/icon.png" />
         <meta key="twitter:creator" name="twitter:creator" content="@solarbeam.io" />
         <meta key="og:type" property="og:type" content="website" />
         <meta key="og:site_name" property="og:site_name" content="Silverswap.org app" />
         <meta key="og:url" property="og:url" content="https://solarbeam.io" />
         <meta key="og:image" property="og:image" content="https://solarbeam.io/icon.png" />
-        <meta key="og:description" property="og:description" content="Silverswap.org - DEX with LP protection" />
+        <meta key="og:description" property="og:description" content="Silverswap.org - DEX/AMM for CRONOS Network" />
       </Head>
       <I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
         <Web3ReactProvider getLibrary={getLibrary}>
