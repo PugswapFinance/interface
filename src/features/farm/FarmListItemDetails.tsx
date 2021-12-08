@@ -3,7 +3,7 @@ import { ChainId, MASTERCHEF_ADDRESS, Token, ZERO } from '../../sdk'
 import { Chef, PairType } from './enum'
 import { Disclosure, Transition } from '@headlessui/react'
 import React, { useState } from 'react'
-import { usePendingSolar, useUserInfo } from './hooks'
+import { usePendingSilver, useUserInfo } from './hooks'
 
 import Button from '../../components/Button'
 import Dots from '../../components/Dots'
@@ -47,8 +47,8 @@ const FarmListItem = ({ farm }) => {
   // TODO: Replace these
   const { amount, nextHarvestUntil } = useUserInfo(farm, liquidityToken)
 
-  const pendingSolar = usePendingSolar(farm)
-
+  const pendingSilver = usePendingSilver(farm)
+  
   const reward = usePendingReward(farm)
 
   const typedDepositValue = tryParseAmount(depositValue, liquidityToken)
@@ -220,7 +220,7 @@ const FarmListItem = ({ farm }) => {
             </Button>
           </div>
         </div>
-        {pendingSolar && pendingSolar.greaterThan(ZERO) && (
+        {pendingSilver && pendingSilver.greaterThan(ZERO) && (
           <div className="px-4 pb-4">
             <Button
               color="gradient"
@@ -244,7 +244,7 @@ const FarmListItem = ({ farm }) => {
                 setPendingTx(false)
               }}
             >
-              {i18n._(t`Harvest ${formatNumber(pendingSolar.toFixed(18))} SILVER`)}
+              {i18n._(t`Harvest ${formatNumber(pendingSilver.toFixed(18))} SILVER`)}
             </Button>
           </div>
         )}

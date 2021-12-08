@@ -163,7 +163,7 @@ export default function Farm(): JSX.Element {
   })
 
   const allStaked = positions.reduce((previousValue, currentValue) => {
-    return previousValue + (currentValue.pendingSolar / 1e18) * solarPrice
+    return previousValue + (currentValue.pendingSilver / 1e18) * solarPrice
   }, 0)
 
   const valueStaked = positions.reduce((previousValue, currentValue) => {

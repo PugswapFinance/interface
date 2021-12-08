@@ -2,7 +2,7 @@ import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallbac
 import { Token, ZERO } from '../../sdk'
 import { Disclosure, Transition } from '@headlessui/react'
 import React, { useState } from 'react'
-import { usePendingSolar, useUserInfo } from './hooks'
+import { usePendingSilver, useUserInfo } from './hooks'
 import Button from '../../components/Button'
 import Dots from '../../components/Dots'
 import { SOLAR_DISTRIBUTOR_ADDRESS, SOLAR_VAULT_ADDRESS } from '../../constants/addresses'
@@ -51,7 +51,7 @@ const VaultListItem = ({ farm }) => {
 
   console.log(`amount staked ${farm.id}: ${amount}`)
 
-  const pendingSolar = usePendingSolar(farm)
+  const pendingSilver = usePendingSilver(farm)
 
   const typedDepositValue = tryParseAmount(depositValue, liquidityToken)
   const typedWithdrawValue = tryParseAmount(withdrawValue, liquidityToken)
@@ -277,7 +277,7 @@ const VaultListItem = ({ farm }) => {
               </Button>
             </div>
           </div>
-          {pendingSolar && pendingSolar.greaterThan(ZERO) && (
+          {pendingSilver && pendingSilver.greaterThan(ZERO) && (
             <div className="px-4 pb-4">
               <Button
                 color="gradient"
@@ -314,7 +314,7 @@ const VaultListItem = ({ farm }) => {
                   }
                 }}
               >
-                {i18n._(t`Harvest ${formatNumber(pendingSolar.toFixed(18))} SILVER`)}
+                {i18n._(t`Harvest ${formatNumber(pendingSilver.toFixed(18))} SILVER`)}
               </Button>
             </div>
           )}

@@ -535,7 +535,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingSolar",
+    "name": "pendingSilver",
     "outputs": [
       {
         "internalType": "uint256",

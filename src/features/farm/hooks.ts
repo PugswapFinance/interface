@@ -72,7 +72,7 @@ export function useUserInfo(farm, token) {
   }
 }
 
-export function usePendingSolar(farm) {
+export function usePendingSilver(farm) {
   const { account, chainId } = useActiveWeb3React()
 
   const contract = useChefContract(0)
@@ -84,12 +84,12 @@ export function usePendingSolar(farm) {
     return [String(farm.id), String(account)]
   }, [farm, account])
 
-  const result = useSingleCallResult(args ? contract : null, 'pendingSolar', args)?.result
+  const result = useSingleCallResult(args ? contract : null, 'pendingSilver', args)?.result // Change this to pendingSilver
 
   const value = result?.[0]
 
   const amount = value ? JSBI.BigInt(value.toString()) : undefined
-
+  
   return amount ? CurrencyAmount.fromRawAmount(SILVER[chainId], amount) : undefined
 }
 
@@ -125,24 +125,24 @@ export function useSolarPositions(contract?: Contract | null) {
     return [...Array(numberOfPools.toNumber()).keys()].map((pid) => [String(pid), String(account)])
   }, [numberOfPools, account])
 
-  const pendingSolar = useSingleContractMultipleData(args ? contract : null, 'pendingSolar', args)
+  const pendingSilver = useSingleContractMultipleData(args ? contract : null, 'pendingSilver', args)
 
   const userInfo = useSingleContractMultipleData(args ? contract : null, 'userInfo', args)
 
   return useMemo(() => {
-    if (!pendingSolar || !userInfo) {
+    if (!pendingSilver || !userInfo) {
       return []
     }
-    return zip(pendingSolar, userInfo)
+    return zip(pendingSilver, userInfo)
       .map((data, i) => ({
         id: args[i][0],
-        pendingSolar: data[0].result?.[0] || Zero,
+        pendingSilver: data[0].result?.[0] || Zero,
         amount: data[1].result?.[0] || Zero,
       }))
-      .filter(({ pendingSolar, amount }) => {
-        return (pendingSolar && !pendingSolar.isZero()) || (amount && !amount.isZero())
+      .filter(({ pendingSilver, amount }) => {
+        return (pendingSilver && !pendingSilver.isZero()) || (amount && !amount.isZero())
       })
-  }, [args, pendingSolar, userInfo])
+  }, [args, pendingSilver, userInfo])
 }
 
 export function usePositions() {

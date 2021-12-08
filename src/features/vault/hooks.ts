@@ -47,7 +47,7 @@ export function useUserInfo(farm, token) {
   }
 }
 
-export function usePendingSolar(farm) {
+export function usePendingSilver(farm) {
   const { account, chainId } = useActiveWeb3React()
 
   const contract = useSolarVaultContract()
@@ -59,7 +59,7 @@ export function usePendingSolar(farm) {
     return [String(farm.id), String(account)]
   }, [farm, account])
 
-  const result = useSingleCallResult(args ? contract : null, 'pendingSolar', args)?.result
+  const result = useSingleCallResult(args ? contract : null, 'pendingSilver', args)?.result
 
   const value = result?.[0]
 
@@ -100,25 +100,25 @@ export function useSolarPositions(contract?: Contract | null) {
     return [...Array(numberOfPools.toNumber()).keys()].map((pid) => [String(pid), String(account)])
   }, [numberOfPools, account])
 
-  const pendingSolar = useSingleContractMultipleData(args ? contract : null, 'pendingSolar', args)
+  const pendingSilver = useSingleContractMultipleData(args ? contract : null, 'pendingSilver', args)
   const userInfo = useSingleContractMultipleData(args ? contract : null, 'userInfo', args)
   const userLockedUntil = useSingleContractMultipleData(args ? contract : null, 'userLockedUntil', args)
 
   return useMemo(() => {
-    if (!pendingSolar || !userInfo || !userLockedUntil) {
+    if (!pendingSilver || !userInfo || !userLockedUntil) {
       return []
     }
-    return zip(pendingSolar, userInfo, userLockedUntil)
+    return zip(pendingSilver, userInfo, userLockedUntil)
       .map((data, i) => ({
         id: args[i][0],
-        pendingSolar: data[0].result?.[0] || Zero,
+        pendingSilver: data[0].result?.[0] || Zero,
         amount: data[1].result?.[0] || Zero,
         lockedUntil: data[2].result?.[0] || Zero,
       }))
-      .filter(({ pendingSolar, amount }) => {
-        return (pendingSolar && !pendingSolar.isZero()) || (amount && !amount.isZero())
+      .filter(({ pendingSilver, amount }) => {
+        return (pendingSilver && !pendingSilver.isZero()) || (amount && !amount.isZero())
       })
-  }, [args, pendingSolar, userInfo, userLockedUntil])
+  }, [args, pendingSilver, userInfo, userLockedUntil])
 }
 
 export function usePositions() {

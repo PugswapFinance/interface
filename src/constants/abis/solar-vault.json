@@ -522,7 +522,7 @@
         "type": "uint256"
       }
     ],
-    "name": "payOrLockupPendingSolar",
+    "name": "payOrLockupPendingSilver",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -540,7 +540,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingSolar",
+    "name": "pendingSilver",
     "outputs": [
       {
         "internalType": "uint256",
