@@ -54,6 +54,16 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )}
+                      {chainId && [ChainId.CRONOS_TESTNET].includes(chainId) && (
+                        <NavLink href={'https://cronos.crypto.org/faucet'}>
+                          <a
+                            target="_blank"
+                            className="p-2 text-lg text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
+                          >
+                            {i18n._(t`Faucet`)}
+                          </a>
+                        </NavLink>
+                      )}
                     </div>
                   </div>
                 </div>
